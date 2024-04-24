@@ -17,7 +17,7 @@ validate(){
     fi
 }
  
- check_root() {
+check_root() {
 if [ $userid -ne 0 ]
 then 
 echo "you are not super user get root access"
