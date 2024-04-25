@@ -35,7 +35,7 @@ unzip /tmp/backend.zip &>>$logfile
 npm install &>>$logfile
 
 
-cp /home/ec2-user/expense-shell/backend.service /etc/systemd/system/backend.service &>>$logfile
+cp /home/ec2-user/source/backend.service /etc/systemd/system/backend.service &>>$logfile
 
 
  systemctl daemon-reload &>>$logfile
