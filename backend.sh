@@ -5,10 +5,7 @@ check_root
 
 dnf module disable nodejs -y &>>$logfile
 
-
 dnf module enable nodejs:20 -y &>>$logfile
-
-
 
 dnf install nodejs -y &>>$logfile
 
@@ -55,6 +52,6 @@ cp /home/ec2-user/expense-shell/backend.service /etc/systemd/system/backend.serv
 
 
 systemctl restart backend &>>$logfile
-
+ 
 
 
