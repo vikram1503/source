@@ -11,6 +11,7 @@ dnf install nodejs -y &>>$logfile
 
 
 id expense &>>$logfile
+
 if [ $? -ne 0 ]
 then 
 useradd expense &>>$logfile
