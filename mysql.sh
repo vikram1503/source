@@ -19,7 +19,7 @@ systemctl start mysqld &>>$logfile
 mysql -h db.imvicky.online -uroot -p${mysql_root_password} -e 'show databases;'  &>>$logfile
 if [ $? -ne 0 ]
 then 
-   mysql_secure_instalfflation --set-root-pass ${mysql_root_password} &>>$logfile
+   mysql_secure_installation --set-root-pass ${mysql_root_password} &>>$logfile
   
    else 
    echo -e "mysql root password is already set...$y skipping $n"
